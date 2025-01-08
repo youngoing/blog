@@ -1,5 +1,5 @@
 # Dockerfile
-FROM node:18-alpine AS build
+FROM registry.cn-beijing.aliyuncs.com/k8w/node:16 AS build
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
